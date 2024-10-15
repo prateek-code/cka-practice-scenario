@@ -16,7 +16,6 @@ The goal of this scenario is to practice setting up persistent storage using a P
      - Capacity: 1Gi
      - Access Modes: ReadWriteOnce
      - Storage Class: `manual`
-     - Create Host Path `mkdir -p /mnt/test` on the worker node which we labelled as storage-node=true.
      - pv_definition.yaml
         ```yaml
         apiVersion: v1
