@@ -123,6 +123,7 @@ The goal of this scenario is to practice setting up persistent storage using a P
    - Delete the pod `kubectl delete pod busybox-pv`
    - Delete the `kubectl delete pvc cka-pvc` and `kubectl delete pv cka-pv` PVs and PVCs.
    - Delete labelled nodes `kubectl label nodes <node-name> storage-node-`
+   - Delete yaml files `rm pv_definition.yaml pvc_definition.yaml pod_definition.yaml`
 ### Deliverables
 - Confirm that the persistent storage configuration works correctly and that data persists even after deleting and recreating the pod.
 

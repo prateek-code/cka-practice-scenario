@@ -117,6 +117,10 @@
    ```bash
    kubectl exec  frontend -- curl -s backend
    ```
+8. **Cleanup:**
+   - Delete pods `kubectl delete pod frontend backend`, delete service `kubectl delete service backend` and the network policy `kubectl delete networkpolicy deny-all` 
+   - Remove files `rm pod_definition.yaml deny_policy.yaml`
+
 
 ## Expected Result:
 After applying the network policy, the `frontend` pod should not be able to access the `backend` pod, however once labeled as access=allowed it should be able to access while other pods without the correct labels should be denied access.

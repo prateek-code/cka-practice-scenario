@@ -54,6 +54,8 @@
       ```bash
       kubectl exec -n cka-practice nginx-container -- cat /var/log/pod-shared/log.txt
       ```
-
+6. **Cleanup:**
+   - Remove the pod `kubectl delete pod multi-container-pod`.
+   - Remove files `rm multi_container_pod.yaml`
 ## Expected Result:
 You should see log entries showing the current date and time, confirming that the `busybox-container` is writing to the log file and you should be able to read it from nginx-container.
